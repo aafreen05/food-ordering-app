@@ -1,0 +1,79 @@
+/* index.css */
+/* Global CSS variables for theming. Every color in the app should reference these,
+   never hardcode a color directly in a component's CSS. */
+
+:root {
+  /* ---- Light theme (default) ---- */
+  --color-bg: #FAFAFA;
+  --color-surface: #FFFFFF;         /* cards, panels */
+  --color-surface-alt: #F5F5F7;     /* subtle secondary background */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #6B6B6B;
+  --color-border: #ECECEC;
+
+  --color-primary: #FF3E6C;         /* pink accent, from your reference image */
+  --color-primary-hover: #E62E5C;
+  --color-primary-light: #FFE4EC;
+  --color-hero-gradient: linear-gradient(135deg, #FF3E6C 0%, #FF6B8B 100%);
+  --color-category-bg: #FFF0F4;
+
+  --color-success: #2ECC71;
+  --color-warning: #F5A623;
+  --color-danger: #E74C3C;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+}
+
+/* ---- Dark theme ---- */
+[data-theme="dark"] {
+  --color-bg: #121212;
+  --color-surface: #1E1E1E;
+  --color-surface-alt: #262626;
+  --color-text-primary: #F5F5F5;
+  --color-text-secondary: #A0A0A0;
+  --color-border: #2E2E2E;
+
+  --color-primary: #FF3E6C;         /* keep the same accent for brand consistency */
+  --color-primary-hover: #FF5C82;
+  --color-primary-light: #3A1C24;
+  --color-hero-gradient: linear-gradient(135deg, #FF3E6C 0%, #D6285A 100%);
+  --color-category-bg: #241419;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ---- Base resets ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: "Segoe UI", "Inter", -apple-system, sans-serif;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}

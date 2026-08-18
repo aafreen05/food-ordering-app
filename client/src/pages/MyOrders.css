@@ -1,0 +1,31 @@
+/* pages/MyOrders.css */
+
+.my-orders-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 20px 100px;
+}
+
+.my-orders-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-bottom: 24px;
+}
+
+.my-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.my-orders-message {
+  text-align: center;
+  color: var(--color-text-secondary);
+  padding: 40px 20px 20px;
+  font-size: 15px;
+}
+
+.my-orders-empty {
+  text-align: center;
+}

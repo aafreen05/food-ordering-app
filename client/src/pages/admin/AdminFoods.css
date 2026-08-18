@@ -1,0 +1,108 @@
+/* pages/admin/AdminFoods.css */
+
+.admin-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.admin-table-wrapper {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.admin-table th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text-secondary);
+  padding: 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.admin-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+
+.admin-table-image {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.availability-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.availability-badge.available {
+  background-color: #E8F8EE;
+  color: #1E8E3E;
+}
+
+.availability-badge.unavailable {
+  background-color: #FDEDED;
+  color: var(--color-danger);
+}
+
+.admin-table-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.table-action-btn {
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  background-color: var(--color-surface-alt);
+  color: var(--color-text-primary);
+}
+
+.table-action-btn:hover {
+  background-color: var(--color-border);
+}
+
+.table-action-danger {
+  color: var(--color-danger);
+}
+
+/* ---- Form inside modal ---- */
+.admin-food-form .form-group {
+  margin-bottom: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-group-checkbox {
+  display: flex;
+  align-items: center;
+  padding-top: 22px;
+}
+
+.form-group-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
